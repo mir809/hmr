@@ -9,6 +9,8 @@
 
 /* screen */
 @import "screens/login.css";
+
 body {
+  height: 1000vh;
   font-family: "Open Sans", sans-serif;
 }
