@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>03.09 challenge</title>
+    <title>You Are Awesome!</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
@@ -14,136 +14,135 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="status-bar">
-      <div class="status-bar_column">
-        <i class="fas fa-list fa-lg"></i>
-      </div>
-      <div class="status-bar_column">
-        <span>library</span>
-      </div>
-      <div class="status-bar_column">
-        <i class="fas fa-shopping-bag fa-lg"></i>
-      </div>
+    <header>
+      <i class="fas fa-bars"></i>
+      <h1>library</h1>
+      <i class="fas fa-shopping-basket"></i>
+    </header>
+    <div class="search">
+      <input type="text" placeholder="Search books..." />
+      <i class="fas fa-search"></i>
     </div>
-
-    <form class="search">
-      <input name="username" type="text" placeholder="Search books..." />
-      <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
-    </form>
-
-    <main claas="content">
-      <section class="main-book">
-        <div class="book-of-the-day">
-          <h1>Book of the day</h1>
-        </div>
-        <div class="main-book-box">
-          <img class="main-img" src="img/no fixed abode.jpg" />
-          <div class="main-book-data">
-            <h1 class="main-book-title">No Fixed Abode</h1>
-            <span class="main-book-text">Journey Through</span>
-            <div class="main-book-grade">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="main-book-btn">
-              <div class="main-book-btn-top">
-                <div class="btn-journey">
-                  <span>Journey</span>
-                </div>
-                <div class="btn-biography">
-                  <span>Biography</span>
-                </div>
-              </div>
-              <div class="main-book-btn-bottom">
-                <div class="btn-bookmark">
-                  <i class="fas fa-bookmark fa-lg"></i>
-                </div>
-                <div class="btn-booknow">
-                  <span>Book Now</span>
-                </div>
-              </div>
-            </div>
+    <main>
+      <h2>Book of the Day</h2>
+      <div class="featured-book">
+        <img
+          src="https://cdn.shopify.com/s/files/1/2697/1746/products/1984-book-cover-art-book-cover-prints-2_1531c558-4ea7-4a8b-95f4-1fa3534f0ee9_1200x1200.jpg?v=1545557205"
+          class="featured-book__cover"
+        />
+        <div class="featured-book__data">
+          <h3 class="featured-book__title">1984</h3>
+          <h5 class="featured-book__author">George Orwell</h5>
+          <div class="featured-book__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="featured-book__tags">
+            <span class="featured-book__tag">Distopia</span>
+            <span class="featured-book__tag">Freedom</span>
+          </div>
+          <div class="featured-book__actions">
+            <span class="featured-book__bookmark"
+              ><i class="fas fa-bookmark"></i
+            ></span>
+            <span class="featured-book__book">Book now</span>
           </div>
         </div>
-      </section>
-      <section class="top-adventures">
-        <div class="top-adventures-tilte">
-          <h1>Top Adventures</h1>
-        </div>
-        <ul class="book-list">
-          <li>
-            <div>
-              <img src="img/hold still.jpg" />
-              <div class="book-list-grade">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/jungle book.jpg" />
-              <div class="book-list-grade">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/노인과 바다.jpg" />
-              <div class="book-list-grade">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/해리포터.jpg" />
-              <div class="book-list-grade">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="author">
-        <h1 class="popular-autors">Popular autors</h1>
-        <div class="author-content">
-          <img src="img/george raymond richard martin.jpg" />
-          <div class="author-textbox">
-            <h1 class="author-title">Greorge Raymond Richard Martin</h1>
-            <p class="author-text">
-              Modern American science fiction writer, screenwriter, producter
-              and editor, winner of many literary awards.
-            </p>
+      </div>
+      <h2>Top Adventures</h2>
+      <div class="top-books">
+        <div class="top-books__book">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2697/1746/products/1984-book-cover-art-book-cover-prints-2_1531c558-4ea7-4a8b-95f4-1fa3534f0ee9_1200x1200.jpg?v=1545557205"
+          />
+          <div class="top-books__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
         </div>
-      </section>
+        <div class="top-books__book">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2697/1746/products/1984-book-cover-art-book-cover-prints-2_1531c558-4ea7-4a8b-95f4-1fa3534f0ee9_1200x1200.jpg?v=1545557205"
+          />
+          <div class="top-books__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="top-books__book">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2697/1746/products/1984-book-cover-art-book-cover-prints-2_1531c558-4ea7-4a8b-95f4-1fa3534f0ee9_1200x1200.jpg?v=1545557205"
+          />
+          <div class="top-books__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="top-books__book">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2697/1746/products/1984-book-cover-art-book-cover-prints-2_1531c558-4ea7-4a8b-95f4-1fa3534f0ee9_1200x1200.jpg?v=1545557205"
+          />
+          <div class="top-books__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="top-books__book">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2697/1746/products/1984-book-cover-art-book-cover-prints-2_1531c558-4ea7-4a8b-95f4-1fa3534f0ee9_1200x1200.jpg?v=1545557205"
+          />
+          <div class="top-books__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="top-books__book">
+          <img
+            src="https://cdn.shopify.com/s/files/1/2697/1746/products/1984-book-cover-art-book-cover-prints-2_1531c558-4ea7-4a8b-95f4-1fa3534f0ee9_1200x1200.jpg?v=1545557205"
+          />
+          <div class="top-books__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <h2>Popular authors</h2>
+      <div class="popular">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/George_Orwell%2C_c._1940.jpg/1200px-George_Orwell%2C_c._1940.jpg"
+        />
+        <div class="popular__data">
+          <h5 class="popular__title">George Orwell</h5>
+          <p class="popular__bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            at et excepturi quos! Doloribus, itaque enim non ex temporibus sint
+            officia, at ipsa saepe magni maxime! Laboriosam facilis aut
+            corrupti?
+          </p>
+        </div>
+      </div>
     </main>
-
-    <script
-      src="https://kit.fontawesome.com/f415d8287d.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
