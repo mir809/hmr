@@ -1,1 +1,8 @@
-
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 40px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
