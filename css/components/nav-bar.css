@@ -1,9 +1,9 @@
 .nav {
   position: fixed;
   bottom: 0;
-  width: 100%;
   background-color: #f9f9fa;
   padding: 20px 50px;
+  width: 100%;
   box-sizing: border-box;
   border-top: 1px solid rgba(122, 122, 122, 0.3);
 }
@@ -14,4 +14,32 @@
 
 .nav-link {
   color: #2e363e;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-notification {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+
+.nav-dot {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 28px;
+  right: -5px;
 }
