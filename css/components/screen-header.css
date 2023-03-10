@@ -4,9 +4,10 @@
   align-items: center;
   padding: 20px;
   position: sticky;
-  top: 0;
+  top: 26px;
   width: 100%;
   box-sizing: border-box;
+  background-color: white;
 }
 
 .screen-header-title {
