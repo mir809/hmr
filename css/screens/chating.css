@@ -80,3 +80,70 @@
 .message-row-own .message-info {
   flex-direction: row-reverse;
 }
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+}
+
+.reply .reply-column:first-child {
+  width: 10%;
+}
+
+.reply .reply-column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  padding: 15px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+
+.reply input::placeholder {
+  font-size: 15px;
+}
+
+.reply-column:last-child > i,
+.reply-column:last-child button {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+}
+
+.reply-column:last-child > i {
+  right: 65px;
+  top: 8px;
+}
+
+.reply-column:last-child button {
+  background-color: var(--yellow);
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.reply-column button:focus,
+.reply-column button:active {
+  outline: none;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+
+.reply-column button i {
+  opacity: 1;
+}
