@@ -19,10 +19,26 @@
   font-weight: 600;
 }
 
+.ano-header-column {
+  width: 33%;
+}
+
 .ano-header-column:first-child {
   margin-right: auto;
 }
 
+.ano-header-column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
 .ano-header-column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ano-header-column:last-child i {
+  margin-left: 30px;
 }

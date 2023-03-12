@@ -26,7 +26,9 @@
 
     <header class="ano-header">
       <div class="ano-header-column">
-        <i class="fas fa-angle-left fa-3x"></i>
+        <a onclick="history.back(1);">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
       </div>
       <div class="ano-header-column">
         <h1 class="ano-header-title">Setting</h1>
@@ -39,16 +41,25 @@
     <main class="main-screen">
       <ul class="settings-list">
         <li class="settings-seting">
-          <i class="fas fa-bullhorn"></i>
-          <span>Notices</span>
+          <div class="settings-seting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
+          </div>
+          <div class="settings-seting-column"></div>
         </li>
         <li class="settings-seting">
-          <i class="fas fa-flask"></i>
-          <span>Kokoa Lab</span>
+          <div class="settings-seting-column">
+            <i class="fas fa-flask"></i>
+            <span>Kokoa Lab</span>
+          </div>
+          <div class="settings-seting-column"></div>
         </li>
         <li class="settings-seting">
-          <i class="fas fa-info-circle"></i>
-          <span>Version</span>
+          <div class="settings-seting-column">
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings-seting-column">Latest Version</div>
         </li>
       </ul>
     </main>
