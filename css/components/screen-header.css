@@ -20,3 +20,12 @@
   font-size: 13px;
   margin-left: 20px;
 }
+
+.config {
+  position: relative;
+}
+.cog-dot {
+  position: absolute;
+  bottom: 27px;
+  right: -8px;
+}

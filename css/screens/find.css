@@ -1,0 +1,35 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+  padding: 12px 0px;
+}
+
+.find-icons-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-icons-icon i {
+  font-size: 30px;
+}
+
+.find-icons-icon span {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.recommend-friend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-text);
+  margin: 100px 0px;
+  font-size: 18px;
+}
+
+.openchat-home {
+  color: rgba(0, 0, 0, 0.3);
+}

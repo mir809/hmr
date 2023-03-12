@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - kokoa clone</title>
+    <title>Find - kokoa clone</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -25,52 +25,53 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header-title">Chats</h1>
+      <h1 class="screen-header-title">Find</h1>
       <div class="screen-header-icons">
         <span><i class="fas fa-search fa-2x"></i></span>
-        <span><i class="far fa-comment-dots fa-2x"></i></span>
-        <span><i class="fas fa-music fa-2x"></i></span>
-        <span><i class="fas fa-cog fa-2x"></i></span>
+        <span class="config"
+          ><i class="fas fa-cog fa-2x"></i>
+          <div class="dot cog-dot"></div>
+        </span>
       </div>
     </header>
 
     <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component-column">
-          <img
-            src="https://mblogthumb-phinf.pstatic.net/20150427_261/ninevincent_1430122791768m7oO1_JPEG/kakao_1.jpg?type=w2"
-            class="user-component-avatar user-component-avatar"
-          />
-          <div class="user-component-text">
-            <h4 class="user-component-title">User</h4>
-            <h6 class="user-component-subtitle">
-              Please check My Kokoa Accuont Info
-            </h6>
-          </div>
+      <div class="find-icons">
+        <div class="find-icons-icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
         </div>
-        <div class="user-component-column">
-          <span class="user-component-time">21:22</span>
-          <div class="badge">1</div>
+        <div class="find-icons-icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by Contacts</span>
         </div>
-      </div>
-      <div class="user-component">
-        <div class="user-component-column">
-          <img
-            src="https://mblogthumb-phinf.pstatic.net/20150427_261/ninevincent_1430122791768m7oO1_JPEG/kakao_1.jpg?type=w2"
-            class="user-component-avatar user-component-avatar"
-          />
-          <div class="user-component-text">
-            <h4 class="user-component-title">User</h4>
-            <h6 class="user-component-subtitle">
-              Please check My Kokoa Accuont Info
-            </h6>
-          </div>
+        <div class="find-icons-icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
         </div>
-        <div class="user-component-column">
-          <span class="user-component-time">21:22</span>
-          <div class="badge">1</div>
+        <div class="find-icons-icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
         </div>
       </div>
+      <div class="main-screen-channel">
+        <div class="main-screen-channel-header">
+          <span>Recommended Friends</span>
+        </div>
+      </div>
+      <div class="recommend-friend">
+        <span>You have no recommended friends.</span>
+      </div>
+      <div class="main-screen-channel">
+        <div class="main-screen-channel-header">
+          <span>Recommended Friends</span>
+          <div class="openchat-home">
+            <span>Go to Openchat Home</span>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class=""></div>
     </main>
 
     <nav class="nav">
@@ -83,7 +84,7 @@
         <li class="nv-btn">
           <a class="nav-link" href="chats.html">
             <span class="nav-notification badge">1</span>
-            <i class="fas fa-comment fa-2x"></i>
+            <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nv-btn">
@@ -93,7 +94,7 @@
         </li>
         <li class="nv-btn">
           <a class="nav-link" href="more.html">
-            <div class="dot dot nav-dot"></div>
+            <div class="dot nav-dot"></div>
             <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>
