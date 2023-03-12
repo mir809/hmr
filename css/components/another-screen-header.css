@@ -43,3 +43,11 @@
 .ano-header-column:last-child i {
   margin-left: 30px;
 }
+
+.ano-header-column i {
+  font-size: 25px;
+}
+
+.ano-header-column:first-child i {
+  font-size: 40px;
+}
