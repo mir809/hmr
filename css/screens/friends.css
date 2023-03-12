@@ -15,17 +15,13 @@
   margin-left: 8px;
 }
 
-.friend-screen {
-  padding: 0px var(--horizontal-space);
-}
-
-.friend-screen-channel {
+.main-screen-channel {
   margin-top: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   padding-top: 15px;
 }
 
-.friend-screen-channel-header {
+.main-screen-channel-header {
   margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
