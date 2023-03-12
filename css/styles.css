@@ -12,6 +12,7 @@
 @import "components/channel.css";
 @import "components/icon-row.css";
 @import "components/another-screen-header.css";
+@import "components/no-mobile.css";
 
 /* screen */
 @import "screens/login.css";
