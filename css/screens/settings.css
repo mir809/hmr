@@ -8,12 +8,27 @@
   justify-content: space-between;
 }
 
+.settings-seting:last-child {
+  border: none;
+}
+
+.settings-list {
+  margin-bottom: ;
+}
+
 .settings-seting i {
   margin-right: 20px;
   font-size: 22px;
   opacity: 0.8;
 }
 
-.settings-seting-column:last-child {
+.settings-seting .settings-seting-column:last-child {
   opacity: 0.6;
+}
+
+.settings-list-cut {
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
