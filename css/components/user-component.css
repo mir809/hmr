@@ -1,3 +1,7 @@
+.user-component {
+  justify-content: space-between;
+}
+
 .user-component,
 .user-component-column:first-child {
   display: flex;
@@ -15,9 +19,18 @@
   height: 80px;
 }
 
+.user-component-avatar--sm {
+  width: 60px;
+  height: 60px;
+}
+
 .user-component-title {
   font-size: 22px;
   font-weight: 600;
+}
+
+.user-component-title--not-bold {
+  font-weight: 400;
 }
 
 .user-component-subtitle {
@@ -26,6 +39,6 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.friend-screen {
-  padding: 0px var(--horizontal-space);
+.user-component-column:last-child {
+  color: rgba(0, 0, 0, 0.5);
 }
