@@ -22,7 +22,7 @@
 @import "screens/chating.css";
 
 body {
-  height: 200vh;
+  height: 100vh;
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
 }
