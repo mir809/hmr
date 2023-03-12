@@ -35,7 +35,7 @@
 }
 
 .user-component-subtitle {
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 17px;
   color: var(--gray-text);
 }
@@ -54,4 +54,13 @@
 
 .main-screen-channel > .user-component {
   margin-top: 30px;
+}
+
+.more-column-icon {
+  color: #2e363e;
+}
+
+.user-component-subtitle i {
+  margin-left: 5px;
+  color: tomato;
 }
