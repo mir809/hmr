@@ -12,8 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .chat-timestamp {
@@ -103,12 +102,13 @@
 }
 
 .reply input {
-  padding: 15px;
+  padding: 10px 20px;
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
   background-color: #f8f8f8;
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 .reply input::placeholder {
@@ -118,20 +118,20 @@
 .reply-column:last-child > i,
 .reply-column:last-child button {
   position: absolute;
-  right: 3px;
+  right: 2px;
   top: 2px;
 }
 
 .reply-column:last-child > i {
-  right: 65px;
-  top: 8px;
+  right: 60px;
+  top: 6.5px;
 }
 
 .reply-column:last-child button {
   background-color: var(--yellow);
   border: none;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -146,4 +146,84 @@
 
 .reply-column button i {
   opacity: 1;
+}
+
+.reply .reply-column:first-child,
+.reply .fa-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply-column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-12%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
+}
+
+.reply input {
+  transition: all 0.3s ease-in-out;
+}
+
+.reply {
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.chat-timestamp {
+  animation: fadeIn 1s linear;
+}
+
+@keyframes rowmessage {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message-row {
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: rowmessage 1s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes ownmessage {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message-row-own {
+  width: 100%;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: ownmessage 1s linear forwards;
+  animation-delay: 2s;
 }
