@@ -1,5 +1,5 @@
 .screen-header {
-  z-index: 2;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,5 +1,6 @@
 .ano-header {
-  z-index: 3;
+  z-index: 5;
+
   position: sticky;
   top: 26px;
 

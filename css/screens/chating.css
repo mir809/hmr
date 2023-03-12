@@ -1,5 +1,26 @@
-#chat-screen > .status-bar,
-#chat-screen > .ano-header,
-#chat-screen {
+#chating > .status-bar,
+#chating > .ano-header,
+#chating {
   background-color: #abc1d1;
+}
+
+#chating {
+  height: 1000vh;
+}
+
+.chating-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.chat-timestamp {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 10px 15px;
+  border-radius: 30px;
+
+  font-size: 14px;
 }
