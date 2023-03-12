@@ -81,3 +81,23 @@
 .open-post-heart-count span {
   margin-left: 3px;
 }
+
+@keyframes iheartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post-photo:hover i {
+  will-change: transform;
+  animation: iheartBeat 1s linear infinite;
+}
