@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>More - kokoa clone</title>
+    <title>Friends - kokoa clone</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="kakao.jpg" />
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="img/kakao.jpg" />
   </head>
 
   <body>
@@ -26,18 +26,20 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header-title">More</h1>
+      <h1 class="screen-header-title">Friends</h1>
       <div class="screen-header-icons">
         <span><i class="fas fa-search fa-2x"></i></span>
         <span><i class="fas fa-music fa-2x"></i></span>
-        <span class="config"
-          ><a href="settings.html"> <i class="fas fa-cog fa-2x"></i></a>
-          <div class="dot cog-dot"></div>
-        </span>
       </div>
     </header>
 
-    <main class="main-screen more-screen">
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component-column">
           <img
@@ -46,61 +48,33 @@
           />
           <div class="user-component-text">
             <h4 class="user-component-title">User</h4>
-            <h6 class="user-component-subtitle">
-              +9 010-1234-5678
-              <i class="fas fa-exclamation-circle"></i>
-            </h6>
+            <!--<h6 class="user-component-subtitle">This test text</h6>-->
           </div>
         </div>
-        <div class="user-component-column">
-          <div class="more-column-icon">
-            <i class="far fa-comment-alt fa-2x"></i>
-          </div>
-        </div>
+        <div class="user-component-column"></div>
       </div>
-
-      <div class="icon-row">
-        <div class="icon-row-icon">
-          <i class="far fa-calendar-check"></i>
-          <span>Calender</span>
-        </div>
-        <div class="icon-row-icon">
-          <i class="far fa-smile"></i>
-          <div class="dot more-icon-dot"></div>
-          <span>Emoticons</span>
-        </div>
-        <div class="icon-row-icon">
-          <i class="fas fa-brush"></i>
-          <span>Themes</span>
-        </div>
-        <div class="icon-row-icon">
-          <i class="fas fa-file-invoice-dollar"></i>
-          <span>Account</span>
-        </div>
-      </div>
-
-      <div class="main-screen-channel more-channel">
+      <div class="main-screen-channel">
         <div class="main-screen-channel-header">
-          <h6>Suggestions</h6>
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
         </div>
-        <div class="more-channel-icons">
-          <div class="more-channel-icon">
-            <div class="more-channel-icon-image">
-              <i class="fas fa-quote-right"></i>
+        <div class="user-component">
+          <div class="user-component-column">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/20150427_261/ninevincent_1430122791768m7oO1_JPEG/kakao_1.jpg?type=w2"
+              class="user-component-avatar user-component-avatar--sm"
+            />
+            <div class="user-component-text">
+              <h4 class="user-component-title user-component-title--not-bold">
+                Channel
+              </h4>
             </div>
-            <span class="more-channel-icon-text">Kokoa Story</span>
           </div>
-          <div class="more-channel-icon">
-            <div class="more-channel-icon-image">
-              <i class="fas fa-quote-right"></i>
+          <div class="user-component-column">
+            <div>
+              <span>2</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
             </div>
-            <span class="more-channel-icon-text">Kokoa Story</span>
-          </div>
-          <div class="more-channel-icon">
-            <div class="more-channel-icon-image">
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <span class="more-channel-icon-text">Kokoa Story</span>
           </div>
         </div>
       </div>
@@ -110,14 +84,14 @@
       <ul class="nav-list">
         <li class="nv-btn">
           <a class="nav-link" href="friends.html">
-            <i class="far fa-user fa-2x"></i>
-          </a>
+            <i class="fas fa-user fa-2x"></i
+          ></a>
         </li>
         <li class="nv-btn">
           <a class="nav-link" href="chats.html">
             <span class="nav-notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i>
-          </a>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
         </li>
         <li class="nv-btn">
           <a class="nav-link" href="find.html"
@@ -126,7 +100,7 @@
         </li>
         <li class="nv-btn">
           <a class="nav-link" href="more.html">
-            <div class="dot nav-dot"></div>
+            <div class="nav-dot"></div>
             <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>
@@ -144,6 +118,7 @@
         <i class="far fa-frown"></i>
       </div>
     </div>
+
     <script
       src="https://kit.fontawesome.com/f415d8287d.js"
       crossorigin="anonymous"
