@@ -22,13 +22,10 @@
 @import "screens/settings.css";
 @import "screens/chating.css";
 @import "screens/log-out.css";
+@import "screens/main-screen.css";
 
 body {
   height: 100vh;
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
-}
-
-.main-screen {
-  padding: 0px var(--horizontal-space);
 }
